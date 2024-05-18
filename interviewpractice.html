@@ -22,7 +22,7 @@
         th {
             background-color: #f2f2f2;
         }
-        th[colspan="3"] {
+        th[colspan="4"] {
             background-color: #4CAF50;
             color: white;
         }
@@ -78,13 +78,13 @@
     <script>
         const daysData = {
             day1: [
-                { name: "Two Sum", link: "https://leetcode.com/problems/two-sum/" },
-                { name: "Container With Most Water", link: "https://leetcode.com/problems/container-with-most-water/" },
-                { name: "3Sum", link: "https://leetcode.com/problems/3sum/" },
-                { name: "Longest Substring Without Repeating Characters", link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/" },
-                { name: "Valid Parentheses", link: "https://leetcode.com/problems/valid-parentheses/" },
-                { name: "Trapping Rain Water", link: "https://leetcode.com/problems/trapping-rain-water/" },
-                { name: "Median of Two Sorted Arrays", link: "https://leetcode.com/problems/median-of-two-sorted-arrays/" }
+                { name: "Two Sum", link: "https://leetcode.com/problems/two-sum/", type: "Easy" },
+                { name: "Container With Most Water", link: "https://leetcode.com/problems/container-with-most-water/", type: "Easy" },
+                { name: "3Sum", link: "https://leetcode.com/problems/3sum/" , type: "Easy"},
+                { name: "Longest Substring Without Repeating Characters", link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/" , type: "Easy"},
+                { name: "Valid Parentheses", link: "https://leetcode.com/problems/valid-parentheses/" , type: "Easy"},
+                { name: "Trapping Rain Water", link: "https://leetcode.com/problems/trapping-rain-water/" , type: "Easy"},
+                { name: "Median of Two Sorted Arrays", link: "https://leetcode.com/problems/median-of-two-sorted-arrays/" , type: "Easy"}
             ],
             day2: [
                 { name: "Best Time to Buy and Sell Stock", link: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" },
@@ -150,76 +150,316 @@
                 { name: "Split Array Largest Sum", link: "https://leetcode.com/problems/split-array-largest-sum/", completed: false },
             ],
             // Days 11-20: Linked Lists and Stacks/Queues
-            day11: [
-                { name: "Merge Two Sorted Lists", link: "https://leetcode.com/problems/merge-two-sorted-lists/", completed: false },
-                { name: "Add Two Numbers", link: "https://leetcode.com/problems/add-two-numbers/", completed: false },
-                { name: "Longest Substring Without Repeating Characters", link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/", completed: false },
-                { name: "Median of Two Sorted Arrays", link: "https://leetcode.com/problems/median-of-two-sorted-arrays/", completed: false },
-                { name: "Container With Most Water", link: "https://leetcode.com/problems/container-with-most-water/", completed: false },
-            ],
-            day12: [
-                { name: "Best Time to Buy and Sell Stock", link: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/", completed: false },
-                { name: "Product of Array Except Self", link: "https://leetcode.com/problems/product-of-array-except-self/", completed: false },
-                { name: "3Sum", link: "https://leetcode.com/problems/3sum/", completed: false },
-                { name: "Subarray Sum Equals K", link: "https://leetcode.com/problems/subarray-sum-equals-k/", completed: false },
-                { name: "Longest Increasing Subsequence", link: "https://leetcode.com/problems/longest-increasing-subsequence/", completed: false },
-            ],
-            day13: [
-                { name: "Valid Palindrome", link: "https://leetcode.com/problems/valid-palindrome/", completed: false },
-                { name: "Longest Palindromic Substring", link: "https://leetcode.com/problems/longest-palindromic-substring/", completed: false },
-                { name: "Group Anagrams", link: "https://leetcode.com/problems/group-anagrams/", completed: false },
-                { name: "Wildcard Matching", link: "https://leetcode.com/problems/wildcard-matching/", completed: false },
-                { name: "Minimum Window Substring", link: "https://leetcode.com/problems/minimum-window-substring/", completed: false },
-            ],
-            day14: [
-                { name: "Remove Duplicates from Sorted Array", link: "https://leetcode.com/problems/remove-duplicates-from-sorted-array/", completed: false },
-                { name: "Search in Rotated Sorted Array", link: "https://leetcode.com/problems/search-in-rotated-sorted-array/", completed: false },
-                { name: "Find Minimum in Rotated Sorted Array", link: "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/", completed: false },
-                { name: "Sliding Window Maximum", link: "https://leetcode.com/problems/sliding-window-maximum/", completed: false },
-                { name: "Count of Smaller Numbers After Self", link: "https://leetcode.com/problems/count-of-smaller-numbers-after-self/", completed: false },
-            ],
-            day15: [
-                { name: "Implement strStr()", link: "https://leetcode.com/problems/implement-strstr/", completed: false },
-                { name: "Longest Common Subsequence", link: "https://leetcode.com/problems/longest-common-subsequence/", completed: false },
-                { name: "Palindromic Substrings", link: "https://leetcode.com/problems/palindromic-substrings/", completed: false },
-                { name: "Edit Distance", link: "https://leetcode.com/problems/edit-distance/", completed: false },
-                { name: "Burst Balloons", link: "https://leetcode.com/problems/burst-balloons/", completed: false },
-            ],
-            day16: [
-                { name: "Reverse String", link: "https://leetcode.com/problems/reverse-string/", completed: false },
-                { name: "Longest Repeating Character Replacement", link: "https://leetcode.com/problems/longest-repeating-character-replacement/", completed: false },
-                { name: "Find All Anagrams in a String", link: "https://leetcode.com/problems/find-all-anagrams-in-a-string/", completed: false },
-                { name: "Serialize and Deserialize String", link: "https://leetcode.com/problems/serialize-and-deserialize-string/", completed: false },
-                { name: "Regular Expression Matching", link: "https://leetcode.com/problems/regular-expression-matching/", completed: false },
-            ],
-            day17: [
-                { name: "Move Zeroes", link: "https://leetcode.com/problems/move-zeroes/", completed: false },
-                { name: "Next Permutation", link: "https://leetcode.com/problems/next-permutation/", completed: false },
-                { name: "Subsets II", link: "https://leetcode.com/problems/subsets-ii/", completed: false },
-                { name: "Maximum Product Subarray", link: "https://leetcode.com/problems/maximum-product-subarray/", completed: false },
-                { name: "Word Ladder", link: "https://leetcode.com/problems/word-ladder/", completed: false },
-            ],
-            day18: [
-                { name: "Intersection of Two Arrays", link: "https://leetcode.com/problems/intersection-of-two-arrays/", completed: false },
-                { name: "Rotate Array", link: "https://leetcode.com/problems/rotate-array/", completed: false },
-                { name: "Jump Game II", link: "https://leetcode.com/problems/jump-game-ii/", completed: false },
-                { name: "Largest Rectangle in Histogram", link: "https://leetcode.com/problems/largest-rectangle-in-histogram/", completed: false },
-                { name: "Word Search II", link: "https://leetcode.com/problems/word-search-ii/", completed: false },
-            ],
-            day19: [
-                { name: "Valid Anagram", link: "https://leetcode.com/problems/valid-anagram/", completed: false },
-                { name: "Sort Colors", link: "https://leetcode.com/problems/sort-colors/", completed: false },
-                { name: "Minimum Path Sum", link: "https://leetcode.com/problems/minimum-path-sum/", completed: false },
-                { name: "Find Median from Data Stream", link: "https://leetcode.com/problems/find-median-from-data-stream/", completed: false },
-                { name: "Russian Doll Envelopes", link: "https://leetcode.com/problems/russian-doll-envelopes/", completed: false },
-            ],
-            day20: [
-                { name: "Plus One", link: "https://leetcode.com/problems/plus-one/", completed: false },
-                { name: "Set Matrix Zeroes", link: "https://leetcode.com/problems/set-matrix-zeroes/", completed: false },
-                { name: "Spiral Matrix", link: "https://leetcode.com/problems/spiral-matrix/", completed: false },
-                { name: "Minimum Number of Refueling Stops", link: "https://leetcode.com/problems/minimum-number-of-refueling-stops/", completed: false },
-                { name: "Split Array Largest Sum", link: "https://leetcode.com/problems/split-array-largest-sum/", completed: false },
-            ],
+  day11: [
+    {
+      name: "Merge Two Sorted Lists",
+      link: "https://leetcode.com/problems/merge-two-sorted-lists/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Add Two Numbers",
+      link: "https://leetcode.com/problems/add-two-numbers/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Copy List with Random Pointer",
+      link: "https://leetcode.com/problems/copy-list-with-random-pointer/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Reverse Nodes in k-Group",
+      link: "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Merge k Sorted Lists",
+      link: "https://leetcode.com/problems/merge-k-sorted-lists/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day12: [
+    {
+      name: "Linked List Cycle",
+      link: "https://leetcode.com/problems/linked-list-cycle/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Reorder List",
+      link: "https://leetcode.com/problems/reorder-list/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Remove Nth Node From End of List",
+      link: "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "LRU Cache",
+      link: "https://leetcode.com/problems/lru-cache/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Find the Duplicate Number",
+      link: "https://leetcode.com/problems/find-the-duplicate-number/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day13: [
+    {
+      name: "Min Stack",
+      link: "https://leetcode.com/problems/min-stack/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Evaluate Reverse Polish Notation",
+      link: "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Implement Queue using Stacks",
+      link: "https://leetcode.com/problems/implement-queue-using-stacks/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Largest Rectangle in Histogram",
+      link: "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Trapping Rain Water",
+      link: "https://leetcode.com/problems/trapping-rain-water/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day14: [
+    {
+      name: "Valid Parentheses",
+      link: "https://leetcode.com/problems/valid-parentheses/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Simplify Path",
+      link: "https://leetcode.com/problems/simplify-path/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Decode String",
+      link: "https://leetcode.com/problems/decode-string/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Basic Calculator",
+      link: "https://leetcode.com/problems/basic-calculator/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Remove Invalid Parentheses",
+      link: "https://leetcode.com/problems/remove-invalid-parentheses/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day15: [
+    {
+      name: "Implement Stack using Queues",
+      link: "https://leetcode.com/problems/implement-stack-using-queues/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Next Greater Element II",
+      link: "https://leetcode.com/problems/next-greater-element-ii/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Design Circular Deque",
+      link: "https://leetcode.com/problems/design-circular-deque/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Maximal Rectangle",
+      link: "https://leetcode.com/problems/maximal-rectangle/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "LFU Cache",
+      link: "https://leetcode.com/problems/lfu-cache/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day16: [
+    {
+      name: "Design a Stack With Increment Operation",
+      link: "https://leetcode.com/problems/design-a-stack-with-increment-operation/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Asteroid Collision",
+      link: "https://leetcode.com/problems/asteroid-collision/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Design Front Middle Back Queue",
+      link: "https://leetcode.com/problems/design-front-middle-back-queue/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Expression Add Operators",
+      link: "https://leetcode.com/problems/expression-add-operators/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Largest Histogram in Matrix",
+      link: "https://leetcode.com/problems/largest-histogram-in-matrix/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day17: [
+    {
+      name: "Palindrome Linked List",
+      link: "https://leetcode.com/problems/palindrome-linked-list/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Flatten a Multilevel Doubly Linked List",
+      link: "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Remove Duplicates from Sorted List II",
+      link: "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Split Linked List in Parts",
+      link: "https://leetcode.com/problems/split-linked-list-in-parts/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Reverse Nodes in k-Group",
+      link: "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day18: [
+    {
+      name: "Intersection of Two Linked Lists",
+      link: "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Odd Even Linked List",
+      link: "https://leetcode.com/problems/odd-even-linked-list/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Design a Hit Counter",
+      link: "https://leetcode.com/problems/design-a-hit-counter/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Random Pick with Weight",
+      link: "https://leetcode.com/problems/random-pick-with-weight/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Insert Delete GetRandom O(1)",
+      link: "https://leetcode.com/problems/insert-delete-getrandom-o(1)/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day19: [
+    {
+      name: "Delete Node in a Linked List",
+      link: "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+      completed: false,
+      type: "Easy"
+    },
+    {
+      name: "Reverse Linked List II",
+      link: "https://leetcode.com/problems/reverse-linked-list-ii/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Rotate List",
+      link: "https://leetcode.com/problems/rotate-list/",
+      completed: false,
+      type: "Medium"
+    },
+    {
+      name: "Copy List with Random Pointer",
+      link: "https://leetcode.com/problems/copy-list-with-random-pointer/",
+      completed: false,
+      type: "Hard"
+    },
+    {
+      name: "Merge k Sorted Lists",
+      link: "https://leetcode.com/problems/merge-k-sorted-lists/",
+      completed: false,
+      type: "Hard"
+    }
+  ],
+  day20: [
+    { name: "Remove Linked List Elements", link: "https://leetcode.com/problems/remove-linked-list-elements/", completed: false, type: "Easy" },
+    {name: "Swap Nodes in Pairs", link: "https://leetcode.com/problems/swap-nodes-in-pairs/", completed: false, type: "Medium" },
+    {
+name: "Design Browser History",
+link: "https://leetcode.com/problems/design-browser-history/",
+completed: false,
+type: "Medium"
+    },
+    {
+name: "Serialize and Deserialize Linked List",
+link: "https://leetcode.com/problems/serialize-and-deserialize-linked-list/",
+completed: false,
+type: "Hard"
+    },
+    {
+name: "Maximum Frequency Stack",
+link: "https://leetcode.com/problems/maximum-frequency-stack/",
+completed: false,
+type: "Hard"
+    }
+  ],
             day21: [
                 { name: "Maximum Depth of Binary Tree", link: "https://leetcode.com/problems/maximum-depth-of-binary-tree/", completed: false },
                 { name: "Binary Tree Inorder Traversal", link: "https://leetcode.com/problems/binary-tree-inorder-traversal/", completed: false },
@@ -435,69 +675,69 @@
                 { name: "Cherry Pickup", link: "https://leetcode.com/problems/cherry-pickup/", completed: false }
             ],
             day60: [
-                {"id": "day60_question1", "name": "Implement a Least Recently Used (LRU) Cache", "link": "https://leetcode.com/problems/lru-cache/"},
-                {"id": "day60_question2", "name": "Design a Parking Lot", "link": "https://leetcode.com/discuss/interview-question/object-oriented-design/124658/Design-a-parking-lot.-"},
+                {"id": "day60_question1", name: "Implement a Least Recently Used (LRU) Cache", link: "https://leetcode.com/problems/lru-cache/"},
+                {"id": "day60_question2", name: "Design a Parking Lot", link: "https://leetcode.com/discuss/interview-question/object-oriented-design/124658/Design-a-parking-lot.-"},
             ],
             day61: [
-                {"id": "day61_question1", "name": "Implement a Twitter-like Feed System", "link": "https://www.geeksforgeeks.org/design-a-data-structure-for-twitter-and-a-function-to-get-timeline-of-user/"},
-                {"id": "day61_question2", "name": "Design a Movie Ticket Booking System", "link": "https://www.geeksforgeeks.org/design-a-movie-ticket-booking-system-like-bookmyshow/"},
+                {"id": "day61_question1", name: "Implement a Twitter-like Feed System", link: "https://www.geeksforgeeks.org/design-a-data-structure-for-twitter-and-a-function-to-get-timeline-of-user/"},
+                {"id": "day61_question2", name: "Design a Movie Ticket Booking System", link: "https://www.geeksforgeeks.org/design-a-movie-ticket-booking-system-like-bookmyshow/"},
             ],
             day62: [
-                {"id": "day62_question1", "name": "Implement a File System", "link": "https://leetcode.com/discuss/interview-question/system-design/124651/Designing-a-File-System"},
-                {"id": "day62_question2", "name": "Implement a Binary Search Tree (BST)", "link": ""},
+                {"id": "day62_question1", name: "Implement a File System", link: "https://leetcode.com/discuss/interview-question/system-design/124651/Designing-a-File-System"},
+                {"id": "day62_question2", name: "Implement a Binary Search Tree (BST)", link: ""},
             ],
     //day 61
             day63: [
-                {"id": "day63_question1", "name": "Design a Chess Game", "link": ""},
-                {"id": "day63_question2", "name": "Implement an Elevator System", "link": ""},
+                {"id": "day63_question1", name: "Design a Chess Game", link: ""},
+                {"id": "day63_question2", name: "Implement an Elevator System", link: ""},
             ],
             day64: [
-                {"id": "day64_question1", "name": "Design a Weather Application", "link": ""},
-                {"id": "day64_question2", "name": "Implement a Job Scheduler", "link": ""},
+                {"id": "day64_question1", name: "Design a Weather Application", link: ""},
+                {"id": "day64_question2", name: "Implement a Job Scheduler", link: ""},
             ],
     //day 62
             day65: [
-                {"id": "day65_question1", "name": "Implement a Stack using Queues", "link": ""},
-                {"id": "day65_question2", "name": "Design a Music Streaming Service", "link": ""},
+                {"id": "day65_question1", name: "Implement a Stack using Queues", link: ""},
+                {"id": "day65_question2", name: "Design a Music Streaming Service", link: ""},
             ],
             day66: [
-                {"id": "day66_question1", "name": "Implement a Database Management System", "link": ""},
-                {"id": "day66_question2", "name": "Design a Social Media Analytics Platform", "link": ""},
-                {"id": "day66_question3", "name": "Implement a Sudoku Solver", "link": ""},
+                {"id": "day66_question1", name: "Implement a Database Management System", link: ""},
+                {"id": "day66_question2", name: "Design a Social Media Analytics Platform", link: ""},
+                {"id": "day66_question3", name: "Implement a Sudoku Solver", link: ""},
             ],
     // Continue this pattern for Days 60-89
 
     //days 70-79: System Design Round
             day70: [
-                {"id": "day70_question1", "name": "Design a URL Shortening Service", "link": "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
-                {"id": "day70_question2", "name": "Design an Online Food Ordering System", "link": "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
+                {"id": "day70_question1", name: "Design a URL Shortening Service", link: "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
+                {"id": "day70_question2", name: "Design an Online Food Ordering System", link: "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
             ],
     //day 71
             day71: [
-                {"id": "day70_question3", "name": "Design a Distributed Key-Value Store", "link": "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
-                {"id": "day70_question4", "name": "Design a Social Network", "link": "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
+                {"id": "day70_question3", name: "Design a Distributed Key-Value Store", link: "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
+                {"id": "day70_question4", name: "Design a Social Network", link: "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
             ],
     //day 72
             day72: [
-                {"id": "day70_question5", "name": "Design a Video Streaming Service like Netflix", "link": "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
-                {"id": "day71_question1", "name": "Design a Ride-Sharing Service like Uber", "link": ""},
+                {"id": "day70_question5", name: "Design a Video Streaming Service like Netflix", link: "https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR"},
+                {"id": "day71_question1", name: "Design a Ride-Sharing Service like Uber", link: ""},
             ],
             day73: [
-                {"id": "day71_question2", "name": "Design a Music Recommendation System", "link": ""},
-                {"id": "day71_question3", "name": "Design a Content Delivery Network (CDN)", "link": ""},
+                {"id": "day71_question2", name: "Design a Music Recommendation System", link: ""},
+                {"id": "day71_question3", name: "Design a Content Delivery Network (CDN)", link: ""},
             ],
             day74: [
-                {"id": "day71_question4", "name": "Design an E-commerce Platform", "link": ""},
-                {"id": "day71_question5", "name": "Design a Real-time Chat Application", "link": ""},
+                {"id": "day71_question4", name: "Design an E-commerce Platform", link: ""},
+                {"id": "day71_question5", name: "Design a Real-time Chat Application", link: ""},
             ],
             day75: [
-                {"id": "day72_question1", "name": "Design a Video Conferencing System", "link": ""},
-                {"id": "day72_question2", "name": "Design a Cloud Storage Service like Dropbox", "link": ""},
+                {"id": "day72_question1", name: "Design a Video Conferencing System", link: ""},
+                {"id": "day72_question2", name: "Design a Cloud Storage Service like Dropbox", link: ""},
             ],
             day76: [
-                {"id": "day72_question3", "name": "Design a Flight Booking System", "link": ""},
-                {"id": "day72_question4", "name": "Design a Recommendation Engine", "link": ""},
-                {"id": "day72_question5", "name": "Design a News Aggregation Platform", "link": ""},
+                {"id": "day72_question3", name: "Design a Flight Booking System", link: ""},
+                {"id": "day72_question4", name: "Design a Recommendation Engine", link: ""},
+                {"id": "day72_question5", name: "Design a News Aggregation Platform", link: ""},
             ],
         };
 
@@ -517,13 +757,14 @@
                     tableHTML += '<h2 class="section-heading">System Design Section</h2>';
                 }
                 
-                tableHTML += `<table><thead><tr><th colspan="3">${day.replace("day", "Day ")}</th></tr></thead><tbody>`;
+                tableHTML += `<table><thead><tr><th colspan="4">${day.replace("day", "Day ")}</th></tr></thead><tbody>`;
                 data[day].forEach((question, index) => {
                     const questionId = `${day}_question${index + 1}`;
                     tableHTML += `
                         <tr>
                             <td class="fixed-width">${question.name}</td>
                             <td><a href="${question.link}" target="_blank">Link</a></td>
+                            <td>${question.type}</td>
                             <td><input type="checkbox" id="${questionId}" name="${questionId}" value="${questionId}"></td>
                         </tr>
                     `;
