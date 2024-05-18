@@ -828,7 +828,19 @@ type: "Hard"
                     tableHTML += '<h2 class="section-heading">Practice Mock for day 83 to 100</h2>';
                 }
                 
-                tableHTML += `<table><thead><tr><th colspan="8">${day.replace("day", "Day ")}</th></tr></thead><tbody>`;
+                tableHTML += `<table>
+                    <thead>
+                        <tr><th colspan="8">${day.replace("day", "Day ")}</th></tr>
+                        <tr><th>Question</th>
+                            <th>Question Link</th>
+                            <th>Type</th>
+                            <th>Completed</th>
+                            <th>Solution</th>
+                            <th>Additional Reading</th>
+                            <th>Frequency</th>
+                            <th>Comapnies</th>
+                        </tr>
+                    </thead><tbody>`;
                 data[day].forEach((question, index) => {
                     const questionId = `${day}_question${index + 1}`;
 
@@ -866,7 +878,7 @@ type: "Hard"
                     } else {
                         tableHTML += `
                             <td>
-                                NA - Sol
+                                NA
                             </td>
                         `;
                     }
@@ -882,7 +894,7 @@ type: "Hard"
                     } else {
                         tableHTML += `
                             <td>
-                                NA - Reading
+                                NA
                             </td>
                         `;
                     }
@@ -893,7 +905,7 @@ type: "Hard"
                     } else {
                         tableHTML += `
                             <td>
-                                NA - Freq
+                                NA
                             </td>
                         `;
                     }
@@ -904,7 +916,7 @@ type: "Hard"
                     } else {
                         tableHTML += `
                             <td>
-                                NA - Companies
+                                NA
                             </td>
                         `;
                     }
