@@ -22,7 +22,7 @@
         th {
             background-color: #f2f2f2;
         }
-        th[colspan="7"] {
+        th[colspan="8"] {
             background-color: #4CAF50;
             color: white;
         }
@@ -73,7 +73,8 @@
     </p>
 
     <p>
-        NOTE :: Few Items in Design Section Does not have Links, I will add as soon as I find a perfect one for them.
+        *NOTE :: Few Items in Design Section Does not have Links, I will add as soon as I find a perfect one for them. </br>
+        **NA :: Not Avaialble As this point in time.
     </p>
     <div class="button-container">
         <button class="reset-button" onclick="resetCheckboxes()">Reset All</button>
@@ -817,16 +818,17 @@ type: "Hard"
                 const dayNumber = parseInt(day.replace('day', ''));
                 
                 // Insert section headings
-                if (dayNumber === 60) {
-                    tableHTML += '<h2 class="section-heading">Practice Mock for day 51 to 59</h2>';
+                if (dayNumber === 51) {
                     tableHTML += '<h2 class="section-heading">Machine Coding Section</h2>';
                 }
-                if (dayNumber === 70) {
-                    tableHTML += '<h2 class="section-heading">Practice Mock for day 67 to 69</h2>';
+                if (dayNumber === 62) {
                     tableHTML += '<h2 class="section-heading">System Design Section</h2>';
                 }
+                if (dayNumber === 83) {
+                    tableHTML += '<h2 class="section-heading">Practice Mock for day 83 to 100</h2>';
+                }
                 
-                tableHTML += `<table><thead><tr><th colspan="7">${day.replace("day", "Day ")}</th></tr></thead><tbody>`;
+                tableHTML += `<table><thead><tr><th colspan="8">${day.replace("day", "Day ")}</th></tr></thead><tbody>`;
                 data[day].forEach((question, index) => {
                     const questionId = `${day}_question${index + 1}`;
 
@@ -861,6 +863,12 @@ type: "Hard"
                                 </a>
                             </td>
                         `;
+                    } else {
+                        tableHTML += `
+                            <td>
+                                NA - Sol
+                            </td>
+                        `;
                     }
 
                     if (question.additional) {
@@ -871,16 +879,34 @@ type: "Hard"
                                 </a>
                             </td>
                         `;
+                    } else {
+                        tableHTML += `
+                            <td>
+                                NA - Reading
+                            </td>
+                        `;
                     }
 
                     // Add frequency if available
                     if (question.frequency) {
                         tableHTML += `<td>${question.frequency}</td>`;
+                    } else {
+                        tableHTML += `
+                            <td>
+                                NA - Freq
+                            </td>
+                        `;
                     }
 
                     // Add companies if available
                     if (question.companies) {
                         tableHTML += `<td>${question.companies}</td>`;
+                    } else {
+                        tableHTML += `
+                            <td>
+                                NA - Companies
+                            </td>
+                        `;
                     }
                     
                     tableHTML += `</tr>`;
